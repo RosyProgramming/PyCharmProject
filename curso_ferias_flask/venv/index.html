@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Flask</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filemane='main.css')}} {% %}">
+</head>
+<body>
+    <div class="cadastro">
+        <h1>Cadastro de usuário</h1>
+        <form action="{{ url_for(''index}}" method="POST">
+            nome: <input type="text"> <br>
+        </form>
+    </div>
+
+    <div class="cadastrados">
+        <h1> Usuário cadastrados </h1>
+
+            Nome {{nome}}<br>
+            Idade {{idade}}<br>
+            Profissao {{profissao}}<br>
+
+    </div>
+</body>
+</html>
